@@ -1,0 +1,132 @@
+/* Reset margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body and HTML Height for Full Layout */
+  body, html {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Header Styles */
+  .header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 80px; /* Set logo size */
+    height: auto;
+  }
+  
+  .navbar {
+    display: flex;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Gallery Styles */
+  .gallery {
+    flex: 1;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    padding: 40px;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .gallery-item img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
+  /* Footer Styles */
+  .footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  
+  .footer-section {
+    flex: 1;
+    padding: 20px;
+    min-width: 250px;
+  }
+  
+  .footer-section h3 {
+    margin-bottom: 15px;
+  }
+  
+  .social-icons {
+    list-style: none;
+    display: flex;
+    padding: 0;
+  }
+  
+  .social-icons li {
+    margin-right: 15px;
+  }
+  
+  .social-icons a img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
